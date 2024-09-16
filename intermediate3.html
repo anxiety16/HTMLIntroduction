@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="intermediate3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Registration</h1>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="last_name">Last Name:</labesl>
+                <input type="text" id="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="middle_name">Middle Name:</label>
+                <input type="text" id="middle_name">
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" required>
+                    <option value="hr">HR</option>
+                    <option value="finance">Finance</option>
+                    <option value="it">IT</option>
+                    <option value="sales">Sales</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="office">Office:</label>
+                <input type="text" id="office" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            alert('Form submitted!');
+    
+            const lastName = document.getElementById('last_name').value;
+            const firstName = document.getElementById('first_name').value;
+            const middleName = document.getElementById('middle_name').value;
+            const birthdate = document.getElementById('birthdate').value;
+            const department = document.getElementById('department').value;
+            const office = document.getElementById('office').value;
+    
+            console.log('Last Name:', lastName);
+            console.log('First Name:', firstName);
+            console.log('Middle Name:', middleName);
+            console.log('Birthdate:', birthdate);
+            console.log('Department:', department);
+            console.log('Office:', office);
+        });
+    </script>
+    
+</body>

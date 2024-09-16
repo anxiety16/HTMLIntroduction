@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #46e3e1;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1{
+    font-style: arial;
+    color:#146264;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #138386;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td.price {
+    text-align: right;
+}
+
+td.available {
+    text-align: center;
+}
