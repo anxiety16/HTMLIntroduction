@@ -1,2 +1,2 @@
-##Mahinay jhonny
-##Agustin Dindo
+## Name of the students:
+# Mahinay Jhonny & Agustin Dindo 
